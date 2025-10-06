@@ -1,0 +1,6 @@
+colorama
+pyfiglet
+time
+os
+msvcrt
+subprocess
