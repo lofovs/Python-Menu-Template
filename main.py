@@ -10,16 +10,20 @@ init()
 # key = msvcrt.getch().decode().lower()
 #    if key == "key here":
 
+#The code below allows python to run cmd commands.
 # name = subprocess.run(["command", "add to command"], capture_output=True, text=True)
 # print(name.stdout)
+
+#Search up pyfiglet fonts if you'd like different ASCII letters.
 ascii = Figlet(font="slant")
+
+#Get the username of the local account that is opening main.py (Only shows in the program but looks cool.)
 user = os.getlogin()
 
+#Some functions down below, feature1 shows some example code you can use, and feature2 and
+#  feature3 is pure templates.
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
-
-
-#Checker with some example code
 
 def feature1():
     clear()
@@ -77,8 +81,6 @@ def feature1():
                 clear()
                 feature1()
 
-
-
 def feature2():
     clear()
     print(ascii.renderText("Feature 2"))
@@ -128,11 +130,6 @@ def feature2():
             if key.lower() == "q":
                 feature2()
                 break
-
-
-
-
-
 
 def feature3():
     clear()
