@@ -25,6 +25,8 @@ user = os.getlogin()
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
+#feature 1
 def feature1():
     clear()
     print(ascii.renderText("Feature 1"))
@@ -81,6 +83,7 @@ def feature1():
                 clear()
                 feature1()
 
+#feature2
 def feature2():
     clear()
     print(ascii.renderText("Feature 2"))
@@ -131,6 +134,7 @@ def feature2():
                 feature2()
                 break
 
+#feature3
 def feature3():
     clear()
     print(ascii.renderText("Feature 3"))
@@ -181,6 +185,7 @@ def feature3():
                 feature3()
                 break
 
+#main menu
 def menu():
     print(ascii.renderText("Menu"))
     print("Version:" + Fore.GREEN + "Newest" + Fore.WHITE)
@@ -213,6 +218,7 @@ def menu():
         time.sleep(1)
         exit()
         
+#feel free to copy one of the feature(1, 2 or 3) and make more features. just make sure to list them with print under menu.
 
 #where the actual program runs
 
