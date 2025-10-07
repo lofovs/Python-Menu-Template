@@ -223,7 +223,7 @@ def menu():
 #where the actual program runs
 
 print(ascii.renderText("checker"))
-print(f"Welcome to my program" + Fore.RED + f" {user}" + Fore.WHITE + ". Would you like to continue? (Y/N)" + "\n" + Fore.RED + f"<{user}>" + Fore.WHITE + " : ", end="")
+print(f"Welcome to my program," + Fore.RED + f" {user}" + Fore.WHITE + "! Would you like to continue? (Y/N)" + "\n" + Fore.RED + f"<{user}>" + Fore.WHITE + " : ", end="")
 while True:
     key = msvcrt.getch().decode().lower()
     if key.lower() == "y":
